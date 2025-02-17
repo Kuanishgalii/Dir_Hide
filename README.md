@@ -17,7 +17,7 @@
 
     Запустите инструмент:
     
-    python advanced_dirbuster.py http://example.com wordlist.txt -t 20 -x .php .html -o results.txt
+    python dir_hide.py http://example.com wordlist.txt -t 20 -x .php .html -o results.txt
 
 Параметры командной строки:
 
@@ -49,17 +49,5 @@
 
     Гибкость: Поддерживает прокси, кастомные заголовки и тайм-ауты.
 
-Пример вывода:
-
-2023-10-10 12:00:00 - INFO - [*] Starting directory brute-force on http://example.com
-2023-10-10 12:00:00 - INFO - [*] Loaded 1000 paths from the wordlist.
-2023-10-10 12:00:05 - INFO - [+] Found: http://example.com/admin (Status: 200)
-2023-10-10 12:00:10 - INFO - [+] Found: http://example.com/login (Status: 200)
-2023-10-10 12:00:15 - INFO - [*] Scan complete.
-2023-10-10 12:00:15 - INFO - [*] Time taken: 15.23 seconds
-2023-10-10 12:00:15 - INFO - [+] Found paths:
-  - http://example.com/admin
-  - http://example.com/login
-2023-10-10 12:00:15 - INFO - [*] Results saved to results.txt
 
 Этот инструмент является мощным и гибким решением для поиска скрытых ресурсов на веб-серверах. Используйте его только в законных целях!
