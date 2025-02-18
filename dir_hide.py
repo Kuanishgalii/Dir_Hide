@@ -8,16 +8,16 @@ from typing import List, Dict, Optional
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
-logger = logging.getLogger("AdvancedDirBuster")
+logger = logging.getLogger("Dir_Hide")
 
-class AdvancedDirBuster:
+class Dir_Hide:
     def __init__(
         self,
         base_url: str,
         wordlist_path: str,
         max_threads: int = 10,
         timeout: int = 5,
-        user_agent: str = "AdvancedDirBuster/1.0",
+        user_agent: str = "Dir_Hide/1.0",
         proxy: Optional[Dict[str, str]] = None,
         extensions: Optional[List[str]] = None,
         output_file: Optional[str] = None,
@@ -110,12 +110,12 @@ def main():
     parser.add_argument("-o", "--output", help="Output file to save results")
     parser.add_argument("-p", "--proxy", help="Proxy to use (e.g., http://127.0.0.1:8080)")
     parser.add_argument("-T", "--timeout", type=int, default=5, help="Request timeout in seconds (default: 5)")
-    parser.add_argument("-u", "--user-agent", default="AdvancedDirBuster/1.0", help="Custom User-Agent string")
+    parser.add_argument("-u", "--user-agent", default="Dir_Hide/1.0", help="Custom User-Agent string")
     args = parser.parse_args()
 
     proxy = {"http": args.proxy, "https": args.proxy} if args.proxy else None
 
-    dir_buster = AdvancedDirBuster(
+    dir_buster = Dir_hide(
         base_url=args.url,
         wordlist_path=args.wordlist,
         max_threads=args.threads,
