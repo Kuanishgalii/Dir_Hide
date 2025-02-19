@@ -25,7 +25,7 @@
     python dir_hide.py http://example.com wordlist.txt -t 20 -x .php .html -o results.txt
 
 
-    ----------
+    -------
 
 Параметры командной строки:
 
